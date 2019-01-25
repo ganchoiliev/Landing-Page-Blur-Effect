@@ -9,7 +9,7 @@ body {
   content: "";
   height: 100vh;
   width: 100%;
-  background: url("pexels-photo.jpg");
+  background: url("../pixels-photo2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,7 +34,7 @@ body {
   z-index: 1;
   top: 10%;
   left: 50%;
-  margin-top: 105px;
+  margin-top: 90px;
   margin-left: -145px;
   width: 300px;
   height: 350px;
@@ -43,8 +43,8 @@ body {
 }
 
 .content .logo {
-  height: 180px;
-  width: 180px;
+  height: 140px;
+  width: 140px;
 }
 
 .content .title {
@@ -55,6 +55,7 @@ body {
 .content .text {
   line-height: 1.7;
   margin-top: 1rem;
+  color: #333;
 }
 
 .container {
@@ -76,9 +77,24 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-4 {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .center {
   text-align: center;
   margin: auto;
+}
+
+.about a {
+  text-decoration: none;
+  color: #3b5998;
+}
+
+.about a:hover {
+  color: #8b9dc3;
 }
 
 .bg-light {
@@ -91,6 +107,21 @@ body {
   color: #f4f4f4;
 }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
 footer {
   padding: 2.2rem;
 }
@@ -100,6 +131,19 @@ footer p {
 }
 
 /* Small Screens */
+
+@media (max-width: 750px) {
+  .grid-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid-4 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media (max-width: 560px) {
   .showcase::after {
     height: 50vh;
@@ -111,8 +155,8 @@ footer p {
   }
 
   .content .logo {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
   }
 
   .content .text {
@@ -126,9 +170,23 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .services div {
     border-bottom: #333 dashed 1px;
     padding: 1.2rem 1rem;
+  }
+
+  .small {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -142,4 +200,27 @@ footer p {
   .content {
     top: 0%;
   }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.gallery {
+  margin: 20px 20px;
+}
+
+.gallery img {
+  width: 150px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.gallery img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+span {
+  font-size: 24px;
 }
