@@ -1,5 +1,5 @@
 {
-  "name": "Landing-Page-Blur-Effect",
+  "name": "NailArt",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ganchoiliev/Landing-Page-Blur-Effect.git"
+    "url": "git+https://github.com/ganchoiliev/NailArt.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ganchoiliev/Landing-Page-Blur-Effect/issues"
+    "url": "https://github.com/ganchoiliev/NailArt/issues"
   },
-  "homepage": "https://ganchoiliev.github.io/Landing-Page-Blur-Effect",
+  "homepage": "https://ganchoiliev.github.io/NailArt",
   "dependencies": {
     "gh-pages": "^2.0.1"
   }
