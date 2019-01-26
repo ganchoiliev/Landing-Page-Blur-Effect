@@ -129,7 +129,7 @@ tr:nth-child(even) {
 
 .gallery img {
   width: 150px;
-  padding: 3px;
+  padding: 5px;
   filter: grayscale(100%);
   transition: 1s;
 }
@@ -140,7 +140,7 @@ tr:nth-child(even) {
 }
 
 img {
-  border: #333 solid 3px;
+  border: #333 solid 2px;
 }
 
 span {
@@ -160,6 +160,10 @@ footer p {
 @media (max-width: 750px) {
   .grid-4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #gallery img {
+    border: none;
   }
 }
 
@@ -200,11 +204,6 @@ footer p {
   }
 
   .services div {
-    border-bottom: #333 dashed 1px;
-    padding: 1.2rem 1rem;
-  }
-
-  #gallery div {
     border-bottom: #333 dashed 1px;
     padding: 1.2rem 1rem;
   }
