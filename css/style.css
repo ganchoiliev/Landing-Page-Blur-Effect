@@ -183,6 +183,10 @@ footer p {
     margin-top: 5px;
   }
 
+  #gellery img {
+    width: 100%;
+  }
+
   .content .logo {
     height: 100px;
     width: 100px;
