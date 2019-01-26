@@ -122,6 +122,31 @@ tr:nth-child(even) {
   color: #333333;
 }
 
+/* Gallery */
+.gallery {
+  margin: 20px 20px;
+}
+
+.gallery img {
+  width: 150px;
+  padding: 2px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.gallery img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+img {
+  border: #333 solid 1px;
+}
+
+span {
+  font-size: 24px;
+}
+
 footer {
   padding: 2.2rem;
 }
@@ -203,28 +228,4 @@ footer p {
   .grid-4 {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
-
-.gallery {
-  margin: 20px 20px;
-}
-
-.gallery img {
-  width: 150px;
-  padding: 5px;
-  filter: grayscale(100%);
-  transition: 1s;
-}
-
-.gallery img:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-}
-
-img {
-  border: #333 solid 1px;
-}
-
-span {
-  font-size: 24px;
 }
