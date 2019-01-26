@@ -62,7 +62,7 @@ body {
   max-width: 960px;
   margin: auto;
   overflow: hidden;
-  padding: 4rem 1rem;
+  padding: 4rem 0.5rem;
 }
 
 .grid-3 {
@@ -79,7 +79,6 @@ body {
 
 .grid-4 {
   display: grid;
-
   grid-template-columns: repeat(5, 1fr);
 }
 
@@ -107,6 +106,7 @@ body {
   color: #f4f4f4;
 }
 
+/* Price Table */
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -129,7 +129,7 @@ tr:nth-child(even) {
 
 .gallery img {
   width: 150px;
-  padding: 2px;
+  padding: 3px;
   filter: grayscale(100%);
   transition: 1s;
 }
@@ -140,7 +140,7 @@ tr:nth-child(even) {
 }
 
 img {
-  border: #333 solid 1px;
+  border: #333 solid 3px;
 }
 
 span {
@@ -200,6 +200,11 @@ footer p {
   }
 
   .services div {
+    border-bottom: #333 dashed 1px;
+    padding: 1.2rem 1rem;
+  }
+
+  #gallery div {
     border-bottom: #333 dashed 1px;
     padding: 1.2rem 1rem;
   }
