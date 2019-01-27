@@ -122,6 +122,13 @@ tr:nth-child(even) {
   color: #333333;
 }
 
+.worktime {
+  font-weight: 450;
+  margin-top: -15px;
+  margin-left: 20px;
+  font-style: italic;
+}
+
 /* Gallery */
 .gallery {
   margin: 20px 20px;
